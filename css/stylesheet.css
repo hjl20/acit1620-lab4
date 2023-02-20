@@ -46,14 +46,14 @@ h3 {
     grid-template-columns: 2fr 1fr;
 }
 
-.grid-about-row1 {
+.grid-row1 {
     grid-row: 1
 }
 
-.grid-about-row2 {
+.grid-row2 {
     grid-row: 2
 }
 
-.grid-about-row3 {
+.grid-row3 {
     grid-row: 3;
 }
