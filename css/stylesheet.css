@@ -32,11 +32,28 @@ nav a {
     text-align: center;
 }
 
-/* Main content */
+/* Index - Main content */
 h1 {
     color: midnightblue;
 }
 
 h3 {
     color: darkslateblue
+}
+
+.grid-about {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.grid-about-row1 {
+    grid-row: 1
+}
+
+.grid-about-row2 {
+    grid-row: 2
+}
+
+.grid-about-row3 {
+    grid-row: 3;
 }
