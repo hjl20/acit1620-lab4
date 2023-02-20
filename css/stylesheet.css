@@ -10,18 +10,26 @@ body {
 
 /* Header */
 nav {
-    text-align: center;
     background-color: aliceblue;
     border: 3px dotted darkslateblue;
     border-radius: 16px;
 }
 
-nav h1 {
-    margin: 10px;
+nav a {
+    padding: 5px;
 }
 
-nav a {
-    padding: 10px;
+.flexbox-header {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 10px;
+}
+
+.flexbox-header-title {
+    flex: 1 0 100%;
+    text-align: center;
 }
 
 /* Main content */
