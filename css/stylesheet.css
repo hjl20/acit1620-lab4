@@ -12,7 +12,7 @@ body {
 
 /* Header */
 nav {
-    background-color: aliceblue;
+    background-color: lightskyblue;
     border: 3px dotted darkslateblue;
     border-radius: 16px;
 }
@@ -36,9 +36,10 @@ nav a {
 
 /* Footer */
 footer {
-    background-color: aliceblue;
-    border: 3px dotted darkslateblue;
+    background-color: lightskyblue;
+    border: 3px dotted #191970;
     border-radius: 16px;
+    text-align: center;
 }
 
 /* Main content */
@@ -47,7 +48,7 @@ h1 {
 }
 
 h3 {
-    color: darkslateblue
+    color: #191970;
 }
 
 /* Grid */
@@ -70,7 +71,7 @@ h3 {
 }
 
 .grid-course {
-    border-bottom: solid black 2px;
+    border-bottom: solid black 1px;
 }
 
 /* DESKTOP SECOND */
@@ -78,5 +79,6 @@ h3 {
     .grid-course {
         display: grid;
         grid-template-columns: 1fr 2fr;
+        border-bottom: solid #191970 1px;
     }
 }
