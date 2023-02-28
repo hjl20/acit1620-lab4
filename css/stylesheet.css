@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 
-
-@media screen and (max-width: 600px) {
-    body.mobile-course {
-
-    }
-}
+/* MOBILE FIRST */
 
 .montserrat {
     font-family: 'Montserrat', sans-serif;
@@ -39,7 +34,14 @@ nav a {
     text-align: center;
 }
 
-/* Index - Main content */
+/* Footer */
+footer {
+    background-color: aliceblue;
+    border: 3px dotted darkslateblue;
+    border-radius: 16px;
+}
+
+/* Main content */
 h1 {
     color: midnightblue;
 }
@@ -48,12 +50,9 @@ h3 {
     color: darkslateblue
 }
 
-.grid-1fr-2fr {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-}
+/* Grid */
 
-.grid-2fr-1fr {
+.grid-about {
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
@@ -68,4 +67,16 @@ h3 {
 
 .grid-row3 {
     grid-row: 3;
+}
+
+.grid-course {
+    border-bottom: solid black 2px;
+}
+
+/* DESKTOP SECOND */
+@media screen and (min-width: 600px) {
+    .grid-course {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
 }
