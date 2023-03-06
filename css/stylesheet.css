@@ -4,7 +4,7 @@
 
 /* Header */
 nav {
-    background-color: lightskyblue;
+    background-color: #C9E9FD;
     border: 3px dotted darkslateblue;
     border-radius: 16px;
 }
@@ -28,7 +28,7 @@ nav a {
 
 /* Footer */
 footer {
-    background-color: lightskyblue;
+    background-color: #C9E9FD;
     border: 3px dotted midnightblue;
     border-radius: 16px;
     text-align: center;
