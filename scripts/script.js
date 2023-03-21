@@ -29,6 +29,35 @@ const createCourseArray = () => {
     return courseList
 } 
 
+const addCourse = (code, date) => {
+    
+    const ul = document.querySelector(".ul-course")
+    const li = document.createElement("li")
+    const courseDiv = document.createElement("div")
+    const courseName = document.createElement("a")
+    const courseDate = document.createElement("p")
+    const courseDesc = document.createElement("p")
+
+    li.classList.add("grid-course")
+    courseName.classList.add("course-name")
+    courseDate.classList.add("course-date")
+    courseDesc.classList.add("course-desc")
+
+    courseName.textContent = code
+    courseDate.textContent = date
+    courseDesc.textContent = "N/A"
+
+    courseDiv.appendChild(courseName)
+    courseDiv.appendChild(courseDate)
+
+    li.appendChild(courseDiv)
+    li.appendChild(courseDesc)
+    
+    ul.appendChild(li)
+
+    console.log("Course successfully added.");
+}
+
 const findCourse = courseList => {
 
     do {
@@ -47,13 +76,15 @@ const findCourse = courseList => {
     }
 
     if (!inList) {
+        defaultDate = 'Fall 2020'
         courseArray.push(
             {
                 code: userNum,
-                name: null,
+                date: defaultDate,
             }
-        );
-        console.log("Course successfully added.");
+        )
+        // ADD new course to ul
+        addCourse(userNum, defaultDate)
     }   
 }
 

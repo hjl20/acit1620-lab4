@@ -58,7 +58,7 @@ h3 {
 }
 
 .green-bgcolor {
-    background-color: mediumseagreen;
+    background-color: rgba(60, 179, 113, 50%);
 }
 
 /* Grid */
