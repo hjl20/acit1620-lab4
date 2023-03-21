@@ -57,6 +57,10 @@ h3 {
     padding: 0;
 }
 
+.green-bgcolor {
+    background-color: mediumseagreen;
+}
+
 /* Grid */
 
 .grid-about {
