@@ -15,7 +15,6 @@ const courseList = [
 
 const createCourseArray = () => {
     const courseList = []
-    // TODO: get li class=gridcourse elements to make array
     courseNames = document.getElementsByClassName("course-name")
     courseDates = document.getElementsByClassName("course-date")
     for (let i = 0; i < courseNames.length; i++) {
@@ -37,19 +36,18 @@ const findCourse = courseList => {
     } while (isNaN(userNum) || userNum.length != 4)
     
     inList = false;
-    for (course of courseList) {
-        if (course.code.includes(userNum)) {
-            console.log(`Yes I am taking the course: ${course.code} - ${course.name}`);
-            //TODO: get element and add green-bgcolor class
-            // Get the     
-            //courseItems = document.getElementsByClassName("grid-course")
-
+    for (let i = 0; i < courseList.length; i++) {
+        if (courseList[i].code.includes(userNum)) {
+            console.log(`Yes I am taking the course: ${courseList[i].code}`);
+            // Get HTML element and add green-bgcolor class
+            courseItems = document.getElementsByClassName("grid-course")
+            courseItems[i].classList.add("green-bgcolor")            
             inList = true;
         }
     }
 
     if (!inList) {
-        courseList.push(
+        courseArray.push(
             {
                 code: userNum,
                 name: null,
@@ -60,6 +58,5 @@ const findCourse = courseList => {
 }
 
 courseArray = createCourseArray()
-// findCourse(courseArray)
-// findCourse(courseList)
+findCourse(courseArray)
 
